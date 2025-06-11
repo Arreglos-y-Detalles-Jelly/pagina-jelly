@@ -7,42 +7,13 @@
   <title>Arreglos y Detalles Jelly</title>
   <style>
     body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      background-color: white;
+      background-image: none;
+      color: #333;
+    }
 
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  margin: 0;
-  background-color: white;
-background-image:none;
-  color: #333;
-      <h2>🎉 Cumpleaños</h2>
-<div class="categoria">
-  <img src="https://via.placeholder.com/200x200" alt="Arreglo de cumpleaños 1">
-  <img src="https://via.placeholder.com/200x200" alt="Arreglo de cumpleaños 2">
-</div>
-
-<h2>🎓 Graduaciones</h2>
-<div class="categoria">
-  <img src="https://via.placeholder.com/200x200" alt="Arreglo de graduación 1">
-  <img src="https://via.placeholder.com/200x200" alt="Arreglo de graduación 2">
-</div>
-
-<h2>👧 Día del niño</h2>
-<div class="categoria">
-  <img src="https://via.placeholder.com/200x200" alt="Regalo para niño 1">
-  <img src="https://via.placeholder.com/200x200" alt="Regalo para niño 2">
-</div>
-
-<h2>👩 Día de la mamá</h2>
-<div class="categoria">
-  <img src="https://via.placeholder.com/200x200" alt="Regalo para mamá 1">
-  <img src="https://via.placeholder.com/200x200" alt="Regalo para mamá 2">
-</div>
-
-<h2>👨 Día del papá</h2>
-<div class="categoria">
-  <img src="https://via.placeholder.com/200x200" alt="Regalo para papá 1">
-  <img src="https://via.placeholder.com/200x200" alt="Regalo para papá 2">
-</div>
-}
     header {
       background-color: #ff66b2;
       color: white;
@@ -108,25 +79,27 @@ background-image:none;
       text-decoration: none;
       font-weight: bold;
     }
+
+    .categoria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .categoria img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #ccc;
+      transition: transform 0.3s;
+    }
+
+    .categoria img:hover {
+      transform: scale(1.05);
+    }
   </style>
-.categoria {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.categoria img {
-  width: 200px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 0 10px #ccc;
-  transition: transform 0.3s;
-}
-
-.categoria img:hover {
-  transform: scale(1.05);
-}
 </head>
 <body>
 
@@ -138,6 +111,7 @@ background-image:none;
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#productos">Productos</a>
+    <a href="#categorias">Categorías</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -160,15 +134,39 @@ background-image:none;
     </div>
   </section>
 
-  <section id="contacto" class="seccion">
-    <h2>Contáctanos</h2>
-    <a class="boton" href="https://wa.me/525533903087" target="_blank">💬 WhatsApp</a>
-    <a class="boton" href="https://instagram.com/arreglos_y_detalles_jelly" target="_blank">📸 Instagram</a>
+  <!-- NUEVA SECCIÓN DE CATEGORÍAS -->
+  <section id="categorias" class="seccion">
+    <h2>Categorías</h2>
+
+    <h3>🎉 Cumpleaños</h3>
+    <div class="categoria">
+      <img src="https://via.placeholder.com/200x200" alt="Cumpleaños 1">
+      <img src="https://via.placeholder.com/200x200" alt="Cumpleaños 2">
+    </div>
+
+    <h3>🎓 Graduaciones</h3>
+    <div class="categoria">
+      <img src="https://via.placeholder.com/200x200" alt="Graduación 1">
+      <img src="https://via.placeholder.com/200x200" alt="Graduación 2">
+    </div>
+
+    <h3>👧 Día del niño</h3>
+    <div class="categoria">
+      <img src="https://via.placeholder.com/200x200" alt="Niño 1">
+      <img src="https://via.placeholder.com/200x200" alt="Niño 2">
+    </div>
+
+    <h3>👩 Día de la mamá</h3>
+    <div class="categoria">
+      <img src="https://via.placeholder.com/200x200" alt="Mamá 1">
+      <img src="https://via.placeholder.com/200x200" alt="Mamá 2">
+    </div>
+
+    <h3>👨 Día del papá</h3>
+    <div class="categoria">
+      <img src="https://via.placeholder.com/200x200" alt="Papá 1">
+      <img src="https://via.placeholder.com/200x200" alt="Papá 2">
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Arreglos y Detalles Jelly. Todos los derechos reservados.</p>
-  </footer>
-
-</body>
-</html>
+  <section id="contacto" c
