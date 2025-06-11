@@ -7,6 +7,35 @@
   <title>Arreglos y Detalles Jelly</title>
   <style>
     body {
+<h2>🎉 Cumpleaños</h2>
+<div class="categoria">
+  <img src="https://via.placeholder.com/200x200" alt="Arreglo de cumpleaños 1">
+  <img src="https://via.placeholder.com/200x200" alt="Arreglo de cumpleaños 2">
+</div>
+
+<h2>🎓 Graduaciones</h2>
+<div class="categoria">
+  <img src="https://via.placeholder.com/200x200" alt="Arreglo de graduación 1">
+  <img src="https://via.placeholder.com/200x200" alt="Arreglo de graduación 2">
+</div>
+
+<h2>👧 Día del niño</h2>
+<div class="categoria">
+  <img src="https://via.placeholder.com/200x200" alt="Regalo para niño 1">
+  <img src="https://via.placeholder.com/200x200" alt="Regalo para niño 2">
+</div>
+
+<h2>👩 Día de la mamá</h2>
+<div class="categoria">
+  <img src="https://via.placeholder.com/200x200" alt="Regalo para mamá 1">
+  <img src="https://via.placeholder.com/200x200" alt="Regalo para mamá 2">
+</div>
+
+<h2>👨 Día del papá</h2>
+<div class="categoria">
+  <img src="https://via.placeholder.com/200x200" alt="Regalo para papá 1">
+  <img src="https://via.placeholder.com/200x200" alt="Regalo para papá 2">
+</div>
   font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
   background-color: white;
@@ -79,6 +108,24 @@ background-image:none;
       font-weight: bold;
     }
   </style>
+.categoria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.categoria img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ccc;
+  transition: transform 0.3s;
+}
+
+.categoria img:hover {
+  transform: scale(1.05);
+}
 </head>
 <body>
 
